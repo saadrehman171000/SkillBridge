@@ -1,0 +1,205 @@
+.howItWorks {
+  padding: 8rem 0;
+  background-color: var(--gray-lightest);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-bg);
+  color: var(--primary);
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  z-index: 2;
+}
+
+.imageBg {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: 20px;
+  bottom: 20px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: var(--radius-xl);
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.imagePattern {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: radial-gradient(var(--primary-light) 2px, transparent 2px);
+  background-size: 30px 30px;
+  top: -50px;
+  left: -100px;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.step {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  bottom: -30px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--primary) 0%, rgba(99, 102, 241, 0) 100%);
+}
+
+.stepNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-bg);
+  border-radius: var(--radius-full);
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stepTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.stepDescription {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.bgPattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: radial-gradient(var(--primary-light) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .imageContainer {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imageWrapper {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .howItWorks {
+    padding: 5rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .step {
+    align-items: flex-start;
+  }
+
+  .stepNumber {
+    font-size: 1.5rem;
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .stepTitle {
+    font-size: 1.25rem;
+  }
+
+  .step:not(:last-child)::after {
+    top: 50px;
+    left: 20px;
+  }
+}
