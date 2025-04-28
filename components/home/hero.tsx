@@ -44,21 +44,22 @@ export default function Hero() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
-                  alt="People exchanging skills"
+                  src="/hero.png"
+                  alt="People collaborating and exchanging skills"
                   width={500}
                   height={500}
                   className="w-full object-cover"
+                  priority
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 -z-10 h-full w-full rounded-2xl bg-gradient-to-r from-primary to-secondary opacity-10"></div>
 
-              <div className="absolute -left-12 top-1/4 z-20 animate-float rounded-lg bg-white p-3 shadow-lg dark:bg-gray-800">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10 text-xl">🎨</div>
+              <div className="absolute -left-20 top-0 z-20 animate-float rounded-lg bg-white p-2 shadow-lg dark:bg-gray-800 scale-90">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/10 text-lg">🎨</div>
                   <div>
                     <div className="text-xs text-muted-foreground">Design Skills</div>
-                    <div className="text-sm font-semibold">+28% this month</div>
+                    <div className="text-xs font-semibold">+28% this month</div>
                   </div>
                 </div>
               </div>

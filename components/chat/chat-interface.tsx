@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button"
 export default function ChatInterface() {
   const [activeChat, setActiveChat] = useState(0)
   const [message, setMessage] = useState("")
-  const messagesEndRef = useRef(null)
+  const messagesEndRef = useRef<HTMLDivElement | null>(null)
 
   const contacts = [
     {
       id: 1,
       name: "Maria Rodriguez",
-      avatar: "/placeholder.svg?height=48&width=48",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
       status: "online",
       lastMessage: "When would you like to schedule our next Spanish lesson?",
       lastMessageTime: "10:42 AM",
@@ -23,7 +23,7 @@ export default function ChatInterface() {
     {
       id: 2,
       name: "Robert Chen",
-      avatar: "/placeholder.svg?height=48&width=48",
+      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
       status: "offline",
       lastMessage: "Thanks for the cooking class yesterday!",
       lastMessageTime: "Yesterday",
@@ -32,7 +32,7 @@ export default function ChatInterface() {
     {
       id: 3,
       name: "Sarah Williams",
-      avatar: "/placeholder.svg?height=48&width=48",
+      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
       status: "online",
       lastMessage: "I'll bring my camera to our next photography session",
       lastMessageTime: "Yesterday",
@@ -41,7 +41,7 @@ export default function ChatInterface() {
     {
       id: 4,
       name: "David Kim",
-      avatar: "/placeholder.svg?height=48&width=48",
+      avatar: "https://randomuser.me/api/portraits/men/76.jpg",
       status: "online",
       lastMessage: "The JavaScript tutorial was really helpful",
       lastMessageTime: "Monday",
@@ -158,7 +158,7 @@ export default function ChatInterface() {
     scrollToBottom()
   }, [activeChat])
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault()
     if (message.trim() === "") return
 

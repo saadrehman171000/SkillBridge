@@ -8,14 +8,14 @@ export default function Testimonials() {
         "SkillBridge helped me learn web development by trading my graphic design skills. The AI matching was spot on!",
       name: "Alex Johnson",
       role: "Graphic Designer",
-      avatar: "/placeholder.svg?height=64&width=64",
+      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
       rating: 5,
     },
     {
       quote: "I taught Spanish and learned photography. This platform has changed how I think about skill development.",
       name: "Maria Rodriguez",
       role: "Language Teacher",
-      avatar: "/placeholder.svg?height=64&width=64",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
       rating: 5,
     },
     {
@@ -23,7 +23,7 @@ export default function Testimonials() {
         "As a retired carpenter, I wanted to share my knowledge while learning about computers. SkillBridge made it possible.",
       name: "Robert Chen",
       role: "Retired Carpenter",
-      avatar: "/placeholder.svg?height=64&width=64",
+      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
       rating: 4,
     },
   ]

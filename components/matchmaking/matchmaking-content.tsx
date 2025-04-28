@@ -22,7 +22,7 @@ export default function MatchmakingContent() {
       matchScore: 95,
       user: {
         name: "Alex Johnson",
-        avatar: "/placeholder.svg?height=64&width=64",
+        avatar: "https://randomuser.me/api/portraits/men/32.jpg",
         verified: true,
         rating: 4.8,
         reviews: 24,
@@ -37,7 +37,7 @@ export default function MatchmakingContent() {
       matchScore: 87,
       user: {
         name: "Maria Rodriguez",
-        avatar: "/placeholder.svg?height=64&width=64",
+        avatar: "https://randomuser.me/api/portraits/women/44.jpg",
         verified: true,
         rating: 4.9,
         reviews: 36,
@@ -52,7 +52,7 @@ export default function MatchmakingContent() {
       matchScore: 82,
       user: {
         name: "Robert Chen",
-        avatar: "/placeholder.svg?height=64&width=64",
+        avatar: "https://randomuser.me/api/portraits/men/65.jpg",
         verified: false,
         rating: 4.7,
         reviews: 18,

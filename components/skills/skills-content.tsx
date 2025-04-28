@@ -36,7 +36,7 @@ export default function SkillsContent() {
       availability: "Weekends",
       user: {
         name: "Alex Johnson",
-        avatar: "/placeholder.svg?height=48&width=48",
+        avatar: "https://randomuser.me/api/portraits/men/32.jpg",
         verified: true,
       },
       description:
@@ -54,7 +54,7 @@ export default function SkillsContent() {
       availability: "Weekday Evenings",
       user: {
         name: "Maria Rodriguez",
-        avatar: "/placeholder.svg?height=48&width=48",
+        avatar: "https://randomuser.me/api/portraits/women/44.jpg",
         verified: true,
       },
       description:
@@ -72,7 +72,7 @@ export default function SkillsContent() {
       availability: "Flexible",
       user: {
         name: "Robert Chen",
-        avatar: "/placeholder.svg?height=48&width=48",
+        avatar: "https://randomuser.me/api/portraits/men/65.jpg",
         verified: false,
       },
       description:
@@ -90,7 +90,7 @@ export default function SkillsContent() {
       availability: "Weekends",
       user: {
         name: "Sarah Williams",
-        avatar: "/placeholder.svg?height=48&width=48",
+        avatar: "https://randomuser.me/api/portraits/women/68.jpg",
         verified: true,
       },
       description:

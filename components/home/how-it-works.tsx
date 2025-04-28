@@ -41,10 +41,10 @@ export default function HowItWorks() {
           <div className="relative order-2 mx-auto max-w-md lg:order-1 lg:max-w-none">
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/steps.png"
                 alt="How SkillBridge works"
-                width={500}
-                height={600}
+                width={300}
+                height={300}
                 className="w-full object-cover"
               />
             </div>

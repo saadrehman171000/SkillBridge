@@ -10,7 +10,7 @@ export default function ProfileHeader() {
           <div className="flex flex-wrap items-center gap-6">
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=120&width=120"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
                 alt="User Avatar"
                 width={120}
                 height={120}
