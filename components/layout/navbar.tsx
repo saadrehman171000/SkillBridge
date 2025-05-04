@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, Search, Zap, MessageCircle, User, Menu, X, Sun, Moon } from "lucide-react"
+import { Home, Search, Zap, MessageCircle, User, Menu, X, Sun, Moon, DollarSign, Info } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
@@ -37,6 +37,8 @@ export default function Navbar() {
     { href: "/matchmaking", label: "AI Match", icon: <Zap className="h-5 w-5" /> },
     { href: "/chat", label: "Chat", icon: <MessageCircle className="h-5 w-5" /> },
     { href: "/profile", label: "Profile", icon: <User className="h-5 w-5" /> },
+    { href: "/pricing", label: "Pricing", icon: <DollarSign className="h-5 w-5" /> },
+    { href: "/about", label: "About Us", icon: <Info className="h-5 w-5" /> },
   ]
 
   return (
